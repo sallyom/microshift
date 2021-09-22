@@ -2,12 +2,13 @@
 Description=microshift all-in-one
 Wants=network-online.target
 After=network-online.target
+After=crio.service
 RequiresMountsFor=/run/containers/storage
 
 [Service]
 Restart=on-failure
 TimeoutStopSec=70
-ExecStart=/bin/bash /usr/bin/microshift-aio-run
+ExecStart=/bin/bash /usr/bin/microshift-aio-hostcrio-run
 ExecStop=/usr/bin/podman stop -t 20 microshift-aio 
 Type=forking
 
