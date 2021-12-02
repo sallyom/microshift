@@ -313,7 +313,10 @@ spec:
         app: service-ca
         service-ca: "true"
     spec:
-      securityContext: {}
+      securityContext:
+        runAsGroup: 1001
+        runAsNonRoot: true
+        runAsUser: 1001
       serviceAccount: service-ca
       serviceAccountName: service-ca
       containers:
@@ -323,8 +326,6 @@ spec:
         command: ["service-ca-operator", "controller"]
         ports:
         - containerPort: 8443
-        # securityContext:
-        #   runAsNonRoot: true
         resources:
           requests:
             memory: 120Mi
