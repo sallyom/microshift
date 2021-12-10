@@ -50,7 +50,7 @@ func NewOpenShiftAPIServer(cfg *config.MicroshiftConfig) *OCPAPIServer {
 
 func (s *OCPAPIServer) Name() string { return "ocp-apiserver" }
 func (s *OCPAPIServer) Dependencies() []string {
-	return []string{"kube-apiserver", "openshift-prepjob-manager"}
+	return []string{"kube-apiserver"}
 }
 
 func (s *OCPAPIServer) configure(cfg *config.MicroshiftConfig) error {

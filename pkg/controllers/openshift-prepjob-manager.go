@@ -35,7 +35,7 @@ func NewOpenShiftPrepJob(cfg *config.MicroshiftConfig) *OCPPrepJobManager {
 
 func (s *OCPPrepJobManager) Name() string { return "openshift-prepjob-manager" }
 func (s *OCPPrepJobManager) Dependencies() []string {
-	return []string{"kube-apiserver"}
+	return []string{"kube-apiserver", "ocp-apiserver"}
 }
 
 func (s *OCPPrepJobManager) Run(ctx context.Context, ready chan<- struct{}, stopped chan<- struct{}) error {

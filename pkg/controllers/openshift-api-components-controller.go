@@ -37,7 +37,7 @@ func (s *OpenShiftAPIComponentsControllerManager) Name() string {
 	return "openshift-api-components-manager"
 }
 func (s *OpenShiftAPIComponentsControllerManager) Dependencies() []string {
-	return []string{"kube-apiserver", "openshift-prepjob-manager", "oauth-apiserver"}
+	return []string{"kube-apiserver", "ocp-apiserver", "openshift-prepjob-manager", "oauth-apiserver"}
 }
 
 func (s *OpenShiftAPIComponentsControllerManager) Run(ctx context.Context, ready chan<- struct{}, stopped chan<- struct{}) error {
