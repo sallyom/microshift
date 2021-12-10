@@ -27,6 +27,7 @@ import (
 
 	openshift_controller_manager "github.com/openshift/openshift-controller-manager/pkg/cmd/openshift-controller-manager"
 
+	"github.com/openshift/microshift/pkg/assets"
 	"github.com/openshift/microshift/pkg/config"
 	"github.com/openshift/microshift/pkg/util"
 )
@@ -48,7 +49,7 @@ func NewOpenShiftControllerManager(cfg *config.MicroshiftConfig) *OCPControllerM
 }
 
 func (s *OCPControllerManager) Name() string           { return componentOCM }
-func (s *OCPControllerManager) Dependencies() []string { return []string{"kube-apiserver", "ocp-apiserver", "openshift-prepjob-manager"} }
+func (s *OCPControllerManager) Dependencies() []string { return []string{"kube-apiserver", "ocp-apiserver"} }
 
 func (s *OCPControllerManager) configure(cfg *config.MicroshiftConfig) error {
 	if err := s.writeConfig(cfg); err != nil {
@@ -58,6 +59,13 @@ func (s *OCPControllerManager) configure(cfg *config.MicroshiftConfig) error {
 	var configFilePath = cfg.DataDir + "/resources/openshift-controller-manager/config/config.yaml"
 	args := []string{
 		"--config=" + configFilePath,
+	}
+
+	if err := assets.ApplyNamespaces([]string{
+		"assets/core/0000_50_cluster-openshift-controller-manager_00_namespace.yaml",
+	}, cfg.DataDir+"/resources/kubeadmin/kubeconfig"); err != nil {
+		logrus.Warningf("failed to apply ocm namespace %v", err)
+		return err
 	}
 
 	options := openshift_controller_manager.OpenShiftControllerManager{Output: os.Stdout}

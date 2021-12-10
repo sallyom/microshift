@@ -18,33 +18,41 @@ package controllers
 import (
 	"context"
 
+	"github.com/openshift/microshift/pkg/assets"
 	"github.com/openshift/microshift/pkg/config"
 
 	"github.com/sirupsen/logrus"
 )
 
-type OpenShiftAPIComponentsControllerManager struct {
+type OpenShiftAPIComponentsManager struct {
 	cfg *config.MicroshiftConfig
 }
 
-func NewOpenShiftAPIComponents(cfg *config.MicroshiftConfig) *OpenShiftAPIComponentsControllerManager {
-	s := &OpenShiftAPIComponentsControllerManager{}
+func NewOpenShiftAPIComponents(cfg *config.MicroshiftConfig) *OpenShiftAPIComponentsManager {
+	s := &OpenShiftAPIComponentsManager{}
 	s.cfg = cfg
 	return s
 }
 
-func (s *OpenShiftAPIComponentsControllerManager) Name() string {
+func (s *OpenShiftAPIComponentsManager) Name() string {
 	return "openshift-api-components-manager"
 }
-func (s *OpenShiftAPIComponentsControllerManager) Dependencies() []string {
-	return []string{"kube-apiserver", "ocp-apiserver", "openshift-prepjob-manager", "oauth-apiserver"}
+func (s *OpenShiftAPIComponentsManager) Dependencies() []string {
+	return []string{"kube-apiserver", "ocp-apiserver"}
 }
 
-func (s *OpenShiftAPIComponentsControllerManager) Run(ctx context.Context, ready chan<- struct{}, stopped chan<- struct{}) error {
+// OpenShiftAPIComponentsManager applies SCCs and  CRDs
+// This runs after ocp-apiserver
+func (s *OpenShiftAPIComponentsManager) Run(ctx context.Context, ready chan<- struct{}, stopped chan<- struct{}) error {
 	defer close(ready)
 	// TO-DO add readiness check
-	if err := StartOCPAPIComponents(s.cfg); err != nil {
-		logrus.Errorf("%s unable to prepare ocp componets: %v", s.Name(), err)
+	if err := ApplySCCs(s.cfg); err != nil {
+		logrus.Errorf("%s unable to apply SCCs: %v", s.Name(), err)
+	}
+	logrus.Infof("%s launched SCCs", s.Name())
+
+	if err := assets.ApplyCRDs(s.cfg); err != nil {
+		logrus.Errorf("%s unable to prepare ocp CRDs: %v", s.Name(), err)
 	}
 	logrus.Infof("%s launched ocp componets", s.Name())
 	return ctx.Err()
