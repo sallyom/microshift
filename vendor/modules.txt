@@ -596,7 +596,7 @@ github.com/opencontainers/runtime-spec/specs-go
 github.com/opencontainers/selinux/go-selinux
 github.com/opencontainers/selinux/go-selinux/label
 github.com/opencontainers/selinux/pkg/pwalk
-# github.com/openshift/api v0.0.0-20220124143425-d74727069f6f => github.com/openshift/api v0.0.0-20220124143425-d74727069f6f
+# github.com/openshift/api v0.0.0-20220414050251-a83e6f8f1d50 => github.com/openshift/api v0.0.0-20220124143425-d74727069f6f
 ## explicit
 github.com/openshift/api
 github.com/openshift/api/annotations
@@ -680,7 +680,7 @@ github.com/openshift/apiserver-library-go/pkg/securitycontextconstraints/selinux
 github.com/openshift/apiserver-library-go/pkg/securitycontextconstraints/user
 github.com/openshift/apiserver-library-go/pkg/securitycontextconstraints/util
 github.com/openshift/apiserver-library-go/pkg/securitycontextconstraints/util/sort
-# github.com/openshift/build-machinery-go v0.0.0-20211213093930-7e33a7eb4ce3 => github.com/openshift/build-machinery-go v0.0.0-20210806203541-4ea9b6da3a37
+# github.com/openshift/build-machinery-go v0.0.0-20220121085309-f94edc2d6874 => github.com/openshift/build-machinery-go v0.0.0-20210806203541-4ea9b6da3a37
 ## explicit
 github.com/openshift/build-machinery-go
 github.com/openshift/build-machinery-go/make
@@ -1039,7 +1039,7 @@ github.com/pmezard/go-difflib/difflib
 # github.com/pquerna/cachecontrol v0.0.0-20171018203845-0dec1b30a021 => github.com/pquerna/cachecontrol v0.0.0-20171018203845-0dec1b30a021
 github.com/pquerna/cachecontrol
 github.com/pquerna/cachecontrol/cacheobject
-# github.com/prometheus/client_golang v1.11.0 => github.com/prometheus/client_golang v1.11.0
+# github.com/prometheus/client_golang v1.11.1 => github.com/prometheus/client_golang v1.11.0
 github.com/prometheus/client_golang/prometheus
 github.com/prometheus/client_golang/prometheus/internal
 github.com/prometheus/client_golang/prometheus/promhttp
@@ -1128,7 +1128,7 @@ github.com/xiang90/probing
 github.com/xlab/treeprint
 # go.etcd.io/bbolt v1.3.6 => go.etcd.io/bbolt v1.3.6
 go.etcd.io/bbolt
-# go.etcd.io/etcd/api/v3 v3.5.0 => go.etcd.io/etcd/api/v3 v3.5.0
+# go.etcd.io/etcd/api/v3 v3.5.3 => go.etcd.io/etcd/api/v3 v3.5.3
 go.etcd.io/etcd/api/v3/authpb
 go.etcd.io/etcd/api/v3/etcdserverpb
 go.etcd.io/etcd/api/v3/etcdserverpb/gw
@@ -1136,7 +1136,7 @@ go.etcd.io/etcd/api/v3/membershippb
 go.etcd.io/etcd/api/v3/mvccpb
 go.etcd.io/etcd/api/v3/v3rpc/rpctypes
 go.etcd.io/etcd/api/v3/version
-# go.etcd.io/etcd/client/pkg/v3 v3.5.0 => go.etcd.io/etcd/client/pkg/v3 v3.5.0
+# go.etcd.io/etcd/client/pkg/v3 v3.5.3 => go.etcd.io/etcd/client/pkg/v3 v3.5.3
 go.etcd.io/etcd/client/pkg/v3/fileutil
 go.etcd.io/etcd/client/pkg/v3/logutil
 go.etcd.io/etcd/client/pkg/v3/pathutil
@@ -1145,15 +1145,15 @@ go.etcd.io/etcd/client/pkg/v3/systemd
 go.etcd.io/etcd/client/pkg/v3/tlsutil
 go.etcd.io/etcd/client/pkg/v3/transport
 go.etcd.io/etcd/client/pkg/v3/types
-# go.etcd.io/etcd/client/v2 v2.305.0 => go.etcd.io/etcd/client/v2 v2.305.0
+# go.etcd.io/etcd/client/v2 v2.305.3 => go.etcd.io/etcd/client/v2 v2.305.0
 go.etcd.io/etcd/client/v2
-# go.etcd.io/etcd/client/v3 v3.5.0 => go.etcd.io/etcd/client/v3 v3.5.0
+# go.etcd.io/etcd/client/v3 v3.5.3 => go.etcd.io/etcd/client/v3 v3.5.3
 go.etcd.io/etcd/client/v3
 go.etcd.io/etcd/client/v3/concurrency
 go.etcd.io/etcd/client/v3/credentials
 go.etcd.io/etcd/client/v3/internal/endpoint
 go.etcd.io/etcd/client/v3/internal/resolver
-# go.etcd.io/etcd/pkg/v3 v3.5.0 => go.etcd.io/etcd/pkg/v3 v3.5.0
+# go.etcd.io/etcd/pkg/v3 v3.5.3 => go.etcd.io/etcd/pkg/v3 v3.5.3
 go.etcd.io/etcd/pkg/v3/adt
 go.etcd.io/etcd/pkg/v3/contention
 go.etcd.io/etcd/pkg/v3/cpuutil
@@ -1169,13 +1169,13 @@ go.etcd.io/etcd/pkg/v3/runtime
 go.etcd.io/etcd/pkg/v3/schedule
 go.etcd.io/etcd/pkg/v3/traceutil
 go.etcd.io/etcd/pkg/v3/wait
-# go.etcd.io/etcd/raft/v3 v3.5.0 => go.etcd.io/etcd/raft/v3 v3.5.0
+# go.etcd.io/etcd/raft/v3 v3.5.3 => go.etcd.io/etcd/raft/v3 v3.5.3
 go.etcd.io/etcd/raft/v3
 go.etcd.io/etcd/raft/v3/confchange
 go.etcd.io/etcd/raft/v3/quorum
 go.etcd.io/etcd/raft/v3/raftpb
 go.etcd.io/etcd/raft/v3/tracker
-# go.etcd.io/etcd/server/v3 v3.5.3 => go.etcd.io/etcd/server/v3 v3.5.0
+# go.etcd.io/etcd/server/v3 v3.5.3 => go.etcd.io/etcd/server/v3 v3.5.3
 ## explicit
 go.etcd.io/etcd/server/v3/auth
 go.etcd.io/etcd/server/v3/config
@@ -1311,7 +1311,7 @@ go.uber.org/zap/internal/color
 go.uber.org/zap/internal/exit
 go.uber.org/zap/zapcore
 go.uber.org/zap/zapgrpc
-# golang.org/x/crypto v0.0.0-20210817164053-32db794688a5 => golang.org/x/crypto v0.0.0-20210817164053-32db794688a5
+# golang.org/x/crypto v0.0.0-20220131195533-30dcbda58838 => golang.org/x/crypto v0.0.0-20210817164053-32db794688a5
 golang.org/x/crypto/bcrypt
 golang.org/x/crypto/blowfish
 golang.org/x/crypto/cast5
@@ -3625,13 +3625,13 @@ sigs.k8s.io/yaml
 # github.com/xlab/treeprint => github.com/xlab/treeprint v0.0.0-20181112141820-a009c3971eca
 # github.com/yuin/goldmark => github.com/yuin/goldmark v1.4.0
 # go.etcd.io/bbolt => go.etcd.io/bbolt v1.3.6
-# go.etcd.io/etcd/api/v3 => go.etcd.io/etcd/api/v3 v3.5.0
-# go.etcd.io/etcd/client/pkg/v3 => go.etcd.io/etcd/client/pkg/v3 v3.5.0
+# go.etcd.io/etcd/api/v3 => go.etcd.io/etcd/api/v3 v3.5.3
+# go.etcd.io/etcd/client/pkg/v3 => go.etcd.io/etcd/client/pkg/v3 v3.5.3
 # go.etcd.io/etcd/client/v2 => go.etcd.io/etcd/client/v2 v2.305.0
-# go.etcd.io/etcd/client/v3 => go.etcd.io/etcd/client/v3 v3.5.0
-# go.etcd.io/etcd/pkg/v3 => go.etcd.io/etcd/pkg/v3 v3.5.0
-# go.etcd.io/etcd/raft/v3 => go.etcd.io/etcd/raft/v3 v3.5.0
-# go.etcd.io/etcd/server/v3 => go.etcd.io/etcd/server/v3 v3.5.0
+# go.etcd.io/etcd/client/v3 => go.etcd.io/etcd/client/v3 v3.5.3
+# go.etcd.io/etcd/pkg/v3 => go.etcd.io/etcd/pkg/v3 v3.5.3
+# go.etcd.io/etcd/raft/v3 => go.etcd.io/etcd/raft/v3 v3.5.3
+# go.etcd.io/etcd/server/v3 => go.etcd.io/etcd/server/v3 v3.5.3
 # go.opencensus.io => go.opencensus.io v0.23.0
 # go.opentelemetry.io/contrib => go.opentelemetry.io/contrib v0.20.0
 # go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc => go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.20.0

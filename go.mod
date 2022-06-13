@@ -312,13 +312,13 @@ replace (
 	github.com/xlab/treeprint => github.com/xlab/treeprint v0.0.0-20181112141820-a009c3971eca
 	github.com/yuin/goldmark => github.com/yuin/goldmark v1.4.0
 	go.etcd.io/bbolt => go.etcd.io/bbolt v1.3.6
-	go.etcd.io/etcd/api/v3 => go.etcd.io/etcd/api/v3 v3.5.0
-	go.etcd.io/etcd/client/pkg/v3 => go.etcd.io/etcd/client/pkg/v3 v3.5.0
+	go.etcd.io/etcd/api/v3 => go.etcd.io/etcd/api/v3 v3.5.3
+	go.etcd.io/etcd/client/pkg/v3 => go.etcd.io/etcd/client/pkg/v3 v3.5.3
 	go.etcd.io/etcd/client/v2 => go.etcd.io/etcd/client/v2 v2.305.0
-	go.etcd.io/etcd/client/v3 => go.etcd.io/etcd/client/v3 v3.5.0
-	go.etcd.io/etcd/pkg/v3 => go.etcd.io/etcd/pkg/v3 v3.5.0
-	go.etcd.io/etcd/raft/v3 => go.etcd.io/etcd/raft/v3 v3.5.0
-	go.etcd.io/etcd/server/v3 => go.etcd.io/etcd/server/v3 v3.5.0
+	go.etcd.io/etcd/client/v3 => go.etcd.io/etcd/client/v3 v3.5.3
+	go.etcd.io/etcd/pkg/v3 => go.etcd.io/etcd/pkg/v3 v3.5.3
+	go.etcd.io/etcd/raft/v3 => go.etcd.io/etcd/raft/v3 v3.5.3
+	go.etcd.io/etcd/server/v3 => go.etcd.io/etcd/server/v3 v3.5.3
 	go.opencensus.io => go.opencensus.io v0.23.0
 	go.opentelemetry.io/contrib => go.opentelemetry.io/contrib v0.20.0
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc => go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.20.0
@@ -438,8 +438,8 @@ require (
 	github.com/kelseyhightower/envconfig v1.4.0 // microshift
 	github.com/miekg/dns v1.1.35
 	github.com/mitchellh/go-homedir v1.1.0 // microshift
-	github.com/openshift/api v0.0.0-20220124143425-d74727069f6f
-	github.com/openshift/build-machinery-go v0.0.0-20211213093930-7e33a7eb4ce3
+	github.com/openshift/api v0.0.0-20220414050251-a83e6f8f1d50
+	github.com/openshift/build-machinery-go v0.0.0-20220121085309-f94edc2d6874
 	github.com/openshift/client-go v0.0.0-20211209144617-7385dd6338e3
 	github.com/openshift/openshift-apiserver v0.0.0-alpha.0.0.20220214215439-6b16f7fa1a95
 	github.com/openshift/openshift-controller-manager v0.0.0-alpha.0.0.20220106174623-2c2d50dbda3a
