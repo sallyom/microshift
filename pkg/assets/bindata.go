@@ -15,16 +15,14 @@
 // assets/components/hostpath-provisioner/storageclass.yaml
 // assets/components/openshift-dns/dns/cluster-role-binding.yaml
 // assets/components/openshift-dns/dns/cluster-role.yaml
-// assets/components/openshift-dns/dns/configmap.yaml
 // assets/components/openshift-dns/dns/daemonset.yaml
 // assets/components/openshift-dns/dns/namespace.yaml
 // assets/components/openshift-dns/dns/service-account.yaml
 // assets/components/openshift-dns/dns/service.yaml
-// assets/components/openshift-dns/node-resolver/daemonset.yaml
 // assets/components/openshift-dns/node-resolver/service-account.yaml
+// assets/components/openshift-dns/node-resolver/update-node-resolver.sh
 // assets/components/openshift-router/cluster-role-binding.yaml
 // assets/components/openshift-router/cluster-role.yaml
-// assets/components/openshift-router/configmap.yaml
 // assets/components/openshift-router/deployment.yaml
 // assets/components/openshift-router/namespace.yaml
 // assets/components/openshift-router/service-account.yaml
@@ -142,7 +140,7 @@ func assetsComponentsFlannelClusterroleYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/flannel/clusterrole.yaml", size: 418, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/flannel/clusterrole.yaml", size: 418, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -170,7 +168,7 @@ func assetsComponentsFlannelClusterrolebindingYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/flannel/clusterrolebinding.yaml", size: 248, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/flannel/clusterrolebinding.yaml", size: 248, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -223,7 +221,7 @@ func assetsComponentsFlannelConfigmapYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/flannel/configmap.yaml", size: 674, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/flannel/configmap.yaml", size: 674, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -346,7 +344,7 @@ func assetsComponentsFlannelDaemonsetYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/flannel/daemonset.yaml", size: 2657, mode: os.FileMode(420), modTime: time.Unix(1653503271, 0)}
+	info := bindataFileInfo{name: "assets/components/flannel/daemonset.yaml", size: 2657, mode: os.FileMode(436), modTime: time.Unix(1653512326, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -408,7 +406,7 @@ func assetsComponentsFlannelPodsecuritypolicyYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/flannel/podsecuritypolicy.yaml", size: 1195, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/flannel/podsecuritypolicy.yaml", size: 1195, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -429,7 +427,7 @@ func assetsComponentsFlannelServiceAccountYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/flannel/service-account.yaml", size: 86, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/flannel/service-account.yaml", size: 86, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -468,7 +466,7 @@ func assetsComponentsHostpathProvisionerClusterroleYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/clusterrole.yaml", size: 609, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/clusterrole.yaml", size: 609, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -496,7 +494,7 @@ func assetsComponentsHostpathProvisionerClusterrolebindingYaml() (*asset, error)
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/clusterrolebinding.yaml", size: 338, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/clusterrolebinding.yaml", size: 338, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -552,7 +550,7 @@ func assetsComponentsHostpathProvisionerDaemonsetYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/daemonset.yaml", size: 1231, mode: os.FileMode(420), modTime: time.Unix(1653503271, 0)}
+	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/daemonset.yaml", size: 1231, mode: os.FileMode(436), modTime: time.Unix(1653512326, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -572,7 +570,7 @@ func assetsComponentsHostpathProvisionerNamespaceYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/namespace.yaml", size: 78, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/namespace.yaml", size: 78, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -613,7 +611,7 @@ func assetsComponentsHostpathProvisionerSccYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/scc.yaml", size: 480, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/scc.yaml", size: 480, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -634,7 +632,7 @@ func assetsComponentsHostpathProvisionerServiceAccountYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/service-account.yaml", size: 132, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/service-account.yaml", size: 132, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -660,7 +658,7 @@ func assetsComponentsHostpathProvisionerStorageclassYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/storageclass.yaml", size: 276, mode: os.FileMode(420), modTime: time.Unix(1652799551, 0)}
+	info := bindataFileInfo{name: "assets/components/hostpath-provisioner/storageclass.yaml", size: 276, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -688,7 +686,7 @@ func assetsComponentsOpenshiftDnsDnsClusterRoleBindingYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/cluster-role-binding.yaml", size: 223, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/cluster-role-binding.yaml", size: 223, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -742,72 +740,17 @@ func assetsComponentsOpenshiftDnsDnsClusterRoleYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/cluster-role.yaml", size: 492, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _assetsComponentsOpenshiftDnsDnsConfigmapYaml = []byte(`apiVersion: v1
-data:
-  Corefile: |
-    .:5353 {
-        bufsize 512
-        errors
-        health {
-            lameduck 20s
-        }
-        ready
-        kubernetes cluster.local in-addr.arpa ip6.arpa {
-            pods insecure
-            fallthrough in-addr.arpa ip6.arpa
-        }
-        prometheus 127.0.0.1:9153
-        forward . /etc/resolv.conf {
-            policy sequential
-        }
-        cache 900 {
-            denial 9984 30
-        }
-        reload
-    }
-kind: ConfigMap
-metadata:
-  labels:
-    dns.operator.openshift.io/owning-dns: default
-  name: dns-default
-  namespace: openshift-dns
-`)
-
-func assetsComponentsOpenshiftDnsDnsConfigmapYamlBytes() ([]byte, error) {
-	return _assetsComponentsOpenshiftDnsDnsConfigmapYaml, nil
-}
-
-func assetsComponentsOpenshiftDnsDnsConfigmapYaml() (*asset, error) {
-	bytes, err := assetsComponentsOpenshiftDnsDnsConfigmapYamlBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/configmap.yaml", size: 610, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/cluster-role.yaml", size: 492, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
 var _assetsComponentsOpenshiftDnsDnsDaemonsetYaml = []byte(`kind: DaemonSet
 apiVersion: apps/v1
-metadata:
-  labels:
-    dns.operator.openshift.io/owning-dns: default
-  name: dns-default
-  namespace: openshift-dns
+# name, namespace and labels are set at runtime
 spec:
-  selector:
-    matchLabels:
-      dns.operator.openshift.io/daemonset-dns: default
   template:
     metadata:
-      labels:
-        dns.operator.openshift.io/daemonset-dns: default
       annotations:
         target.workload.openshift.io/management: '{"effect": "PreferredDuringScheduling"}'
     spec:
@@ -815,7 +758,7 @@ spec:
       priorityClassName: system-node-critical
       containers:
       - name: dns
-        image: {{ .ReleaseImage.coredns }}
+        # image is set at runtime
         imagePullPolicy: IfNotPresent
         terminationMessagePolicy: FallbackToLogsOnError
         command: [ "coredns" ]
@@ -855,9 +798,9 @@ spec:
             cpu: 50m
             memory: 70Mi
       - name: kube-rbac-proxy
-        image: {{ .ReleaseImage.kube_rbac_proxy }}
-        imagePullPolicy: IfNotPresent
+        # image is set at runtime
         args:
+        - --logtostderr
         - --secure-listen-address=:9154
         - --tls-cipher-suites=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
         - --upstream=http://127.0.0.1:9153/
@@ -875,22 +818,17 @@ spec:
           name: metrics-tls
           readOnly: true
       dnsPolicy: Default
-      nodeSelector:
-        kubernetes.io/os: linux      
+      # nodeSelector is set at runtime.
       volumes:
       - name: config-volume
         configMap:
+        # Name is set at runtime
           items:
           - key: Corefile
             path: Corefile
-          name: dns-default
       - name: metrics-tls
-        secret:
-          defaultMode: 420
-          secretName: dns-default-metrics-tls
-      tolerations:
-      # DNS needs to run everywhere. Tolerate all taints
-      - operator: Exists
+        # secretName is set at runtime
+      # tolerations is set at runtime.
   updateStrategy:
     type: RollingUpdate
     rollingUpdate:
@@ -911,7 +849,7 @@ func assetsComponentsOpenshiftDnsDnsDaemonsetYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/daemonset.yaml", size: 3217, mode: os.FileMode(420), modTime: time.Unix(1653503271, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/daemonset.yaml", size: 2828, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -928,6 +866,11 @@ metadata:
     openshift.io/run-level: "0"
     # allow openshift-monitoring to look for ServiceMonitor objects in this namespace
     openshift.io/cluster-monitoring: "true"
+    # allow node-resolver daemonset to pass baseline pod security admission.
+    # It uses host networking, host path volumes, and is a privileged.
+    pod-security.kubernetes.io/enforce: privileged
+    pod-security.kubernetes.io/audit: privileged
+    pod-security.kubernetes.io/warn: privileged
 `)
 
 func assetsComponentsOpenshiftDnsDnsNamespaceYamlBytes() ([]byte, error) {
@@ -940,7 +883,7 @@ func assetsComponentsOpenshiftDnsDnsNamespaceYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/namespace.yaml", size: 417, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/namespace.yaml", size: 713, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -962,24 +905,17 @@ func assetsComponentsOpenshiftDnsDnsServiceAccountYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/service-account.yaml", size: 85, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/service-account.yaml", size: 85, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
 var _assetsComponentsOpenshiftDnsDnsServiceYaml = []byte(`kind: Service
 apiVersion: v1
-metadata:
-  annotations:
-    service.beta.openshift.io/serving-cert-secret-name: dns-default-metrics-tls
-  labels:
-      dns.operator.openshift.io/owning-dns: default
-  name: dns-default
-  namespace: openshift-dns
+# name, namespace,labels and annotations are set at runtime
 spec:
-  clusterIP: {{.ClusterIP}}
-  selector:
-    dns.operator.openshift.io/daemonset-dns: default
+  # clusterIP will be automatically managed.
+  # selector is set at runtime
   ports:
   - name: dns
     port: 53
@@ -993,10 +929,6 @@ spec:
     port: 9154
     targetPort: metrics
     protocol: TCP
-  # TODO: Uncomment when service topology feature gate is enabled.
-  #topologyKeys:
-  #  - "kubernetes.io/hostname"
-  #  - "*"
 `)
 
 func assetsComponentsOpenshiftDnsDnsServiceYamlBytes() ([]byte, error) {
@@ -1009,151 +941,7 @@ func assetsComponentsOpenshiftDnsDnsServiceYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/service.yaml", size: 691, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _assetsComponentsOpenshiftDnsNodeResolverDaemonsetYaml = []byte(`apiVersion: apps/v1
-kind: DaemonSet
-metadata:
-  name: node-resolver
-  namespace: openshift-dns
-spec:
-  revisionHistoryLimit: 10
-  selector:
-    matchLabels:
-      dns.operator.openshift.io/daemonset-node-resolver: ""
-  template:
-    metadata:
-      annotations:
-        target.workload.openshift.io/management: '{"effect": "PreferredDuringScheduling"}'
-      labels:
-        dns.operator.openshift.io/daemonset-node-resolver: ""
-    spec:
-      containers:
-      - command:
-        - /bin/bash
-        - -c
-        - |
-          #!/bin/bash
-          set -uo pipefail
-
-          trap 'jobs -p | xargs kill || true; wait; exit 0' TERM
-
-          NAMESERVER=${DNS_DEFAULT_SERVICE_HOST}
-          OPENSHIFT_MARKER="openshift-generated-node-resolver"
-          HOSTS_FILE="/etc/hosts"
-          TEMP_FILE="/etc/hosts.tmp"
-
-          IFS=', ' read -r -a services <<< "${SERVICES}"
-
-          # Make a temporary file with the old hosts file's attributes.
-          cp -f --attributes-only "${HOSTS_FILE}" "${TEMP_FILE}"
-
-          while true; do
-            declare -A svc_ips
-            for svc in "${services[@]}"; do
-              # Fetch service IP from cluster dns if present. We make several tries
-              # to do it: IPv4, IPv6, IPv4 over TCP and IPv6 over TCP. The two last ones
-              # are for deployments with Kuryr on older OpenStack (OSP13) - those do not
-              # support UDP loadbalancers and require reaching DNS through TCP.
-              cmds=('dig -t A @"${NAMESERVER}" +short "${svc}.${CLUSTER_DOMAIN}"|grep -v "^;"'
-                    'dig -t AAAA @"${NAMESERVER}" +short "${svc}.${CLUSTER_DOMAIN}"|grep -v "^;"'
-                    'dig -t A +tcp +retry=0 @"${NAMESERVER}" +short "${svc}.${CLUSTER_DOMAIN}"|grep -v "^;"'
-                    'dig -t AAAA +tcp +retry=0 @"${NAMESERVER}" +short "${svc}.${CLUSTER_DOMAIN}"|grep -v "^;"')
-              for i in ${!cmds[*]}
-              do
-                ips=($(eval "${cmds[i]}"))
-                if [[ "$?" -eq 0 && "${#ips[@]}" -ne 0 ]]; then
-                  svc_ips["${svc}"]="${ips[@]}"
-                  break
-                fi
-              done
-            done
-
-            # Update /etc/hosts only if we get valid service IPs
-            # We will not update /etc/hosts when there is coredns service outage or api unavailability
-            # Stale entries could exist in /etc/hosts if the service is deleted
-            if [[ -n "${svc_ips[*]-}" ]]; then
-              # Build a new hosts file from /etc/hosts with our custom entries filtered out
-              grep -v "# ${OPENSHIFT_MARKER}" "${HOSTS_FILE}" > "${TEMP_FILE}"
-
-              # Append resolver entries for services
-              for svc in "${!svc_ips[@]}"; do
-                for ip in ${svc_ips[${svc}]}; do
-                  echo "${ip} ${svc} ${svc}.${CLUSTER_DOMAIN} # ${OPENSHIFT_MARKER}" >> "${TEMP_FILE}"
-                done
-              done
-
-              # TODO: Update /etc/hosts atomically to avoid any inconsistent behavior
-              # Replace /etc/hosts with our modified version if needed
-              cmp "${TEMP_FILE}" "${HOSTS_FILE}" || cp -f "${TEMP_FILE}" "${HOSTS_FILE}"
-              # TEMP_FILE is not removed to avoid file create/delete and attributes copy churn
-            fi
-            sleep 60 & wait
-            unset svc_ips
-          done
-        env:
-        - name: SERVICES
-          # Comma or space separated list of services
-          # NOTE: For now, ensure these are relative names; for each relative name,
-          # an alias with the CLUSTER_DOMAIN suffix will also be added.
-          value: "image-registry.openshift-image-registry.svc"
-        - name: NAMESERVER
-          value: 172.30.0.10
-        - name: CLUSTER_DOMAIN
-          value: cluster.local
-        image: {{ .ReleaseImage.cli }}
-        imagePullPolicy: IfNotPresent
-        name: dns-node-resolver
-        resources:
-          requests:
-            cpu: 5m
-            memory: 21Mi
-        securityContext:
-          privileged: true
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: FallbackToLogsOnError
-        volumeMounts:
-        - mountPath: /etc/hosts
-          name: hosts-file
-      dnsPolicy: ClusterFirst
-      hostNetwork: true
-      nodeSelector:
-        kubernetes.io/os: linux
-      priorityClassName: system-node-critical
-      restartPolicy: Always
-      schedulerName: default-scheduler
-      securityContext: {}
-      serviceAccount: node-resolver
-      serviceAccountName: node-resolver
-      terminationGracePeriodSeconds: 30
-      tolerations:
-      - operator: Exists
-      volumes:
-      - hostPath:
-          path: /etc/hosts
-          type: File
-        name: hosts-file
-  updateStrategy:
-    rollingUpdate:
-      maxSurge: 0
-      maxUnavailable: 33%
-    type: RollingUpdate
-`)
-
-func assetsComponentsOpenshiftDnsNodeResolverDaemonsetYamlBytes() ([]byte, error) {
-	return _assetsComponentsOpenshiftDnsNodeResolverDaemonsetYaml, nil
-}
-
-func assetsComponentsOpenshiftDnsNodeResolverDaemonsetYaml() (*asset, error) {
-	bytes, err := assetsComponentsOpenshiftDnsNodeResolverDaemonsetYamlBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "assets/components/openshift-dns/node-resolver/daemonset.yaml", size: 4823, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-dns/dns/service.yaml", size: 393, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1175,7 +963,81 @@ func assetsComponentsOpenshiftDnsNodeResolverServiceAccountYaml() (*asset, error
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-dns/node-resolver/service-account.yaml", size: 95, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-dns/node-resolver/service-account.yaml", size: 95, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+var _assetsComponentsOpenshiftDnsNodeResolverUpdateNodeResolverSh = []byte(`#!/bin/bash
+set -uo pipefail
+
+trap 'jobs -p | xargs kill || true; wait; exit 0' TERM
+
+OPENSHIFT_MARKER="openshift-generated-node-resolver"
+HOSTS_FILE="/etc/hosts"
+TEMP_FILE="/etc/hosts.tmp"
+
+IFS=', ' read -r -a services <<< "${SERVICES}"
+
+# Make a temporary file with the old hosts file's attributes.
+cp -f --attributes-only "${HOSTS_FILE}" "${TEMP_FILE}"
+
+while true; do
+  declare -A svc_ips
+  for svc in "${services[@]}"; do
+    # Fetch service IP from cluster dns if present. We make several tries
+    # to do it: IPv4, IPv6, IPv4 over TCP and IPv6 over TCP. The two last ones
+    # are for deployments with Kuryr on older OpenStack (OSP13) - those do not
+    # support UDP loadbalancers and require reaching DNS through TCP.
+    cmds=('dig -t A @"${NAMESERVER}" +short "${svc}.${CLUSTER_DOMAIN}"|grep -v "^;"'
+          'dig -t AAAA @"${NAMESERVER}" +short "${svc}.${CLUSTER_DOMAIN}"|grep -v "^;"'
+          'dig -t A +tcp +retry=0 @"${NAMESERVER}" +short "${svc}.${CLUSTER_DOMAIN}"|grep -v "^;"'
+          'dig -t AAAA +tcp +retry=0 @"${NAMESERVER}" +short "${svc}.${CLUSTER_DOMAIN}"|grep -v "^;"')
+    for i in ${!cmds[*]}
+    do
+      ips=($(eval "${cmds[i]}"))
+      if [[ "$?" -eq 0 && "${#ips[@]}" -ne 0 ]]; then
+        svc_ips["${svc}"]="${ips[@]}"
+        break
+      fi
+    done
+  done
+
+  # Update /etc/hosts only if we get valid service IPs
+  # We will not update /etc/hosts when there is coredns service outage or api unavailability
+  # Stale entries could exist in /etc/hosts if the service is deleted
+  if [[ -n "${svc_ips[*]-}" ]]; then
+    # Build a new hosts file from /etc/hosts with our custom entries filtered out
+    grep -v "# ${OPENSHIFT_MARKER}" "${HOSTS_FILE}" > "${TEMP_FILE}"
+
+    # Append resolver entries for services
+    for svc in "${!svc_ips[@]}"; do
+      for ip in ${svc_ips[${svc}]}; do
+        echo "${ip} ${svc} ${svc}.${CLUSTER_DOMAIN} # ${OPENSHIFT_MARKER}" >> "${TEMP_FILE}"
+      done
+    done
+
+    # TODO: Update /etc/hosts atomically to avoid any inconsistent behavior
+    # Replace /etc/hosts with our modified version if needed
+    cmp "${TEMP_FILE}" "${HOSTS_FILE}" || cp -f "${TEMP_FILE}" "${HOSTS_FILE}"
+    # TEMP_FILE is not removed to avoid file create/delete and attributes copy churn
+  fi
+  sleep 60 & wait
+  unset svc_ips
+done
+`)
+
+func assetsComponentsOpenshiftDnsNodeResolverUpdateNodeResolverShBytes() ([]byte, error) {
+	return _assetsComponentsOpenshiftDnsNodeResolverUpdateNodeResolverSh, nil
+}
+
+func assetsComponentsOpenshiftDnsNodeResolverUpdateNodeResolverSh() (*asset, error) {
+	bytes, err := assetsComponentsOpenshiftDnsNodeResolverUpdateNodeResolverShBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "assets/components/openshift-dns/node-resolver/update-node-resolver.sh", size: 2285, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1205,7 +1067,7 @@ func assetsComponentsOpenshiftRouterClusterRoleBindingYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-router/cluster-role-binding.yaml", size: 329, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-router/cluster-role-binding.yaml", size: 329, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1283,31 +1145,7 @@ func assetsComponentsOpenshiftRouterClusterRoleYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-router/cluster-role.yaml", size: 883, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _assetsComponentsOpenshiftRouterConfigmapYaml = []byte(`apiVersion: v1
-kind: ConfigMap
-metadata:
-  namespace: openshift-ingress
-  name: service-ca-bundle 
-  annotations:
-    service.beta.openshift.io/inject-cabundle: "true"
-`)
-
-func assetsComponentsOpenshiftRouterConfigmapYamlBytes() ([]byte, error) {
-	return _assetsComponentsOpenshiftRouterConfigmapYaml, nil
-}
-
-func assetsComponentsOpenshiftRouterConfigmapYaml() (*asset, error) {
-	bytes, err := assetsComponentsOpenshiftRouterConfigmapYamlBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "assets/components/openshift-router/configmap.yaml", size: 168, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-router/cluster-role.yaml", size: 883, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1316,51 +1154,32 @@ var _assetsComponentsOpenshiftRouterDeploymentYaml = []byte(`# Deployment with d
 # Ingress Controller specific values are applied at runtime.
 kind: Deployment
 apiVersion: apps/v1
-metadata:
-  name: router-default
-  namespace: openshift-ingress
-  labels:
-    ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
+# name and namespace are set at runtime.
 spec:
   progressDeadlineSeconds: 600
-  replicas: 1
-  revisionHistoryLimit: 10
-  selector:
-    matchLabels:
-      ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
-  strategy:
-    rollingUpdate:
-      maxSurge: 0
-      maxUnavailable: 25%
-    type: RollingUpdate
   template:
     metadata:
       annotations:
         "unsupported.do-not-use.openshift.io/override-liveness-grace-period-seconds": "10"
         target.workload.openshift.io/management: '{"effect": "PreferredDuringScheduling"}'
-      labels:
-        ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
     spec:
       serviceAccountName: router
       # nodeSelector is set at runtime.
       priorityClassName: system-cluster-critical
       containers:
         - name: router
-          image: {{ .ReleaseImage.haproxy_router }}
+          # image is set at runtime.
           imagePullPolicy: IfNotPresent
           terminationMessagePolicy: FallbackToLogsOnError
           ports:
           - name: http
             containerPort: 80
-            hostPort: 80
             protocol: TCP
           - name: https
             containerPort: 443
-            hostPort: 443
             protocol: TCP
           - name: metrics
             containerPort: 1936
-            hostPort: 1936
             protocol: TCP
           # Merged at runtime.
           env:
@@ -1373,49 +1192,14 @@ spec:
             value: /etc/pki/tls/private
           - name: DEFAULT_DESTINATION_CA_PATH
             value: /var/run/configmaps/service-ca/service-ca.crt
-          - name: ROUTER_CIPHERS
-            value: TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
-          - name: ROUTER_DISABLE_HTTP2
-            value: "true"
-          - name: ROUTER_DISABLE_NAMESPACE_OWNERSHIP_CHECK
-            value: "false"
-          #FIXME: use metrics tls
-          - name: ROUTER_METRICS_TLS_CERT_FILE
-            value: /etc/pki/tls/private/tls.crt
-          - name: ROUTER_METRICS_TLS_KEY_FILE
-            value: /etc/pki/tls/private/tls.key
-          - name: ROUTER_METRICS_TYPE
-            value: haproxy
-          - name: ROUTER_SERVICE_NAME
-            value: default
-          - name: ROUTER_SET_FORWARDED_HEADERS
-            value: append
-          - name: ROUTER_THREADS
-            value: "4"
-          - name: SSL_MIN_VERSION
-            value: TLSv1.2
           livenessProbe:
-            failureThreshold: 3
             httpGet:
-              host: localhost
               path: /healthz
               port: 1936
-              scheme: HTTP
-            initialDelaySeconds: 10
-            periodSeconds: 10
-            successThreshold: 1
-            timeoutSeconds: 1
           readinessProbe:
-            failureThreshold: 3
             httpGet:
-              host: localhost
               path: /healthz/ready
               port: 1936
-              scheme: HTTP
-            initialDelaySeconds: 10
-            periodSeconds: 10
-            successThreshold: 1
-            timeoutSeconds: 1
           startupProbe:
             failureThreshold: 120
             httpGet:
@@ -1433,17 +1217,11 @@ spec:
           - mountPath: /var/run/configmaps/service-ca
             name: service-ca-bundle
             readOnly: true
-      dnsPolicy: ClusterFirstWithHostNet
-      hostNetwork: true
-      restartPolicy: Always
-      schedulerName: default-scheduler
-      securityContext: {}
-      serviceAccount: router
       volumes:
       - name: default-certificate
         secret:
           defaultMode: 420
-          secretName: router-certs-default
+          # SecretName is set at run-time.
       - name: service-ca-bundle
         configMap:
           items:
@@ -1464,7 +1242,7 @@ func assetsComponentsOpenshiftRouterDeploymentYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-router/deployment.yaml", size: 4746, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-router/deployment.yaml", size: 2517, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1495,7 +1273,7 @@ func assetsComponentsOpenshiftRouterNamespaceYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-router/namespace.yaml", size: 499, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-router/namespace.yaml", size: 499, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1519,33 +1297,36 @@ func assetsComponentsOpenshiftRouterServiceAccountYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-router/service-account.yaml", size: 213, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-router/service-account.yaml", size: 213, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
-var _assetsComponentsOpenshiftRouterServiceCloudYaml = []byte(`kind: Service
+var _assetsComponentsOpenshiftRouterServiceCloudYaml = []byte(`# Load Balancer Service to place in front of the router in cloud environments.
+# Ingress Controller specific values are applied at runtime.
+kind: Service
 apiVersion: v1
 metadata:
-  annotations:
-    service.alpha.openshift.io/serving-cert-secret-name: router-certs-default
-  labels:
-    ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
-  name: router-external-default
+  # Name is set at runtime.
   namespace: openshift-ingress
+  labels:
+    app: router
 spec:
+  type: LoadBalancer
   selector:
-    ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
-  type: NodePort 
+    app: router
+  # This also has the effect of marking LB pool targets as unhealthy when no
+  # router pods are present on a node behind the service.
+  externalTrafficPolicy: Local
   ports:
-    - name: http
-      port: 80
-      targetPort: 80
-      nodePort: 30001
-    - name: https
-      port: 443
-      targetPort: 443
-      nodePort: 30002
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: http
+  - name: https
+    protocol: TCP
+    port: 443
+    targetPort: https
 `)
 
 func assetsComponentsOpenshiftRouterServiceCloudYamlBytes() ([]byte, error) {
@@ -1558,7 +1339,7 @@ func assetsComponentsOpenshiftRouterServiceCloudYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-router/service-cloud.yaml", size: 567, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-router/service-cloud.yaml", size: 631, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1567,16 +1348,8 @@ var _assetsComponentsOpenshiftRouterServiceInternalYaml = []byte(`# Cluster Serv
 # Ingress Controller specific annotations are applied at runtime.
 kind: Service
 apiVersion: v1
-metadata:
-  annotations:
-    service.alpha.openshift.io/serving-cert-secret-name: router-certs-default
-  labels:
-    ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
-  name: router-internal-default
-  namespace: openshift-ingress
+# name, namespace and annotations are set at runtime.
 spec:
-  selector:
-    ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
   type: ClusterIP
   ports:
   - name: http
@@ -1603,7 +1376,7 @@ func assetsComponentsOpenshiftRouterServiceInternalYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/openshift-router/service-internal.yaml", size: 727, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/openshift-router/service-internal.yaml", size: 429, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1672,6 +1445,14 @@ rules:
   - list
   - watch
   - update
+- apiGroups:
+  - config.openshift.io
+  resources:
+  - infrastructures
+  verbs:
+  - get
+  - list
+  - watch
 `)
 
 func assetsComponentsServiceCaClusterroleYamlBytes() ([]byte, error) {
@@ -1684,7 +1465,7 @@ func assetsComponentsServiceCaClusterroleYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/clusterrole.yaml", size: 864, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/clusterrole.yaml", size: 970, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1695,8 +1476,7 @@ metadata:
   name: system:openshift:controller:service-ca
 roleRef:
   kind: ClusterRole
-  name: cluster-admin
-  apiGroup: rbac.authorization.k8s.io
+  name: system:openshift:controller:service-ca
 subjects:
 - kind: ServiceAccount
   namespace: openshift-service-ca
@@ -1713,7 +1493,7 @@ func assetsComponentsServiceCaClusterrolebindingYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/clusterrolebinding.yaml", size: 298, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/clusterrolebinding.yaml", size: 285, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1727,7 +1507,6 @@ metadata:
     app: service-ca
     service-ca: "true"
 spec:
-  replicas: 1
   strategy:
     type: Recreate
   selector:
@@ -1743,18 +1522,16 @@ spec:
         app: service-ca
         service-ca: "true"
     spec:
-      securityContext: {}
-      serviceAccount: service-ca
       serviceAccountName: service-ca
       containers:
       - name: service-ca-controller
-        image: {{ .ReleaseImage.service_ca_operator }}
+        image: ${IMAGE}
         imagePullPolicy: IfNotPresent
         command: ["service-ca-operator", "controller"]
         ports:
         - containerPort: 8443
-        # securityContext:
-        #   runAsNonRoot: true
+        securityContext:
+          runAsNonRoot: true
         resources:
           requests:
             memory: 120Mi
@@ -1767,12 +1544,12 @@ spec:
       volumes:
       - name: signing-key
         secret:
-          secretName: {{.TLSSecret}}
+          secretName: signing-key
       - name: signing-cabundle
         configMap:
-          name: {{.CAConfigMap}}
-      # nodeSelector:
-      #   node-role.kubernetes.io/master: ""
+          name: signing-cabundle
+      nodeSelector:
+        node-role.kubernetes.io/master: ""
       priorityClassName: "system-cluster-critical"
       tolerations:
       - key: node-role.kubernetes.io/master
@@ -1798,7 +1575,7 @@ func assetsComponentsServiceCaDeploymentYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/deployment.yaml", size: 1866, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/deployment.yaml", size: 1751, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1810,6 +1587,8 @@ metadata:
   annotations:
     openshift.io/node-selector: ""
     workload.openshift.io/allowed: "management"
+  labels:
+    openshift.io/run-level-: "" # remove the label on upgrades
 `)
 
 func assetsComponentsServiceCaNsYamlBytes() ([]byte, error) {
@@ -1822,7 +1601,7 @@ func assetsComponentsServiceCaNsYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/ns.yaml", size: 168, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/ns.yaml", size: 241, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1873,7 +1652,8 @@ rules:
   verbs:
   - get
   - list
-  - watch`)
+  - watch
+`)
 
 func assetsComponentsServiceCaRoleYamlBytes() ([]byte, error) {
 	return _assetsComponentsServiceCaRoleYaml, nil
@@ -1885,7 +1665,7 @@ func assetsComponentsServiceCaRoleYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/role.yaml", size: 634, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/role.yaml", size: 635, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1898,7 +1678,6 @@ metadata:
 roleRef:
   kind: Role
   name: system:openshift:controller:service-ca
-  apiGroup: rbac.authorization.k8s.io
 subjects:
 - kind: ServiceAccount
   namespace: openshift-service-ca
@@ -1915,7 +1694,7 @@ func assetsComponentsServiceCaRolebindingYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/rolebinding.yaml", size: 343, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/rolebinding.yaml", size: 305, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1937,7 +1716,7 @@ func assetsComponentsServiceCaSaYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/sa.yaml", size: 99, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/sa.yaml", size: 99, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1961,7 +1740,7 @@ func assetsComponentsServiceCaSigningCabundleYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/signing-cabundle.yaml", size: 123, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/signing-cabundle.yaml", size: 123, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1987,7 +1766,7 @@ func assetsComponentsServiceCaSigningSecretYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/components/service-ca/signing-secret.yaml", size: 144, mode: os.FileMode(420), modTime: time.Unix(1648137870, 0)}
+	info := bindataFileInfo{name: "assets/components/service-ca/signing-secret.yaml", size: 144, mode: os.FileMode(436), modTime: time.Unix(1655089387, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2013,7 +1792,7 @@ func assetsCore0000_50_clusterOpenshiftControllerManager_00_namespaceYaml() (*as
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/core/0000_50_cluster-openshift-controller-manager_00_namespace.yaml", size: 254, mode: os.FileMode(420), modTime: time.Unix(1624916338, 0)}
+	info := bindataFileInfo{name: "assets/core/0000_50_cluster-openshift-controller-manager_00_namespace.yaml", size: 254, mode: os.FileMode(436), modTime: time.Unix(1651603785, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2186,7 +1965,7 @@ func assetsCrd0000_03_authorizationOpenshift_01_rolebindingrestrictionCrdYaml() 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/crd/0000_03_authorization-openshift_01_rolebindingrestriction.crd.yaml", size: 9898, mode: os.FileMode(420), modTime: time.Unix(1652799551, 0)}
+	info := bindataFileInfo{name: "assets/crd/0000_03_authorization-openshift_01_rolebindingrestriction.crd.yaml", size: 9898, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2482,7 +2261,7 @@ func assetsCrd0000_03_securityOpenshift_01_sccCrdYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/crd/0000_03_security-openshift_01_scc.crd.yaml", size: 16010, mode: os.FileMode(420), modTime: time.Unix(1652799551, 0)}
+	info := bindataFileInfo{name: "assets/crd/0000_03_security-openshift_01_scc.crd.yaml", size: 16010, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2562,7 +2341,7 @@ func assetsCrd0000_10_configOperator_01_featuregateCrdYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/crd/0000_10_config-operator_01_featuregate.crd.yaml", size: 3438, mode: os.FileMode(420), modTime: time.Unix(1652799551, 0)}
+	info := bindataFileInfo{name: "assets/crd/0000_10_config-operator_01_featuregate.crd.yaml", size: 3438, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2621,7 +2400,7 @@ func assetsScc0000_20_kubeApiserverOperator_00_sccAnyuidYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-anyuid.yaml", size: 1048, mode: os.FileMode(420), modTime: time.Unix(1633965440, 0)}
+	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-anyuid.yaml", size: 1048, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2685,7 +2464,7 @@ func assetsScc0000_20_kubeApiserverOperator_00_sccHostaccessYaml() (*asset, erro
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-hostaccess.yaml", size: 1267, mode: os.FileMode(420), modTime: time.Unix(1633965440, 0)}
+	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-hostaccess.yaml", size: 1267, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2749,7 +2528,7 @@ func assetsScc0000_20_kubeApiserverOperator_00_sccHostmountAnyuidYaml() (*asset,
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-hostmount-anyuid.yaml", size: 1298, mode: os.FileMode(420), modTime: time.Unix(1633965440, 0)}
+	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-hostmount-anyuid.yaml", size: 1298, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2811,7 +2590,7 @@ func assetsScc0000_20_kubeApiserverOperator_00_sccHostnetworkYaml() (*asset, err
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-hostnetwork.yaml", size: 1123, mode: os.FileMode(420), modTime: time.Unix(1633965440, 0)}
+	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-hostnetwork.yaml", size: 1123, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2873,7 +2652,7 @@ func assetsScc0000_20_kubeApiserverOperator_00_sccNonrootYaml() (*asset, error) 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-nonroot.yaml", size: 1166, mode: os.FileMode(420), modTime: time.Unix(1633965440, 0)}
+	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-nonroot.yaml", size: 1166, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2937,7 +2716,7 @@ func assetsScc0000_20_kubeApiserverOperator_00_sccPrivilegedYaml() (*asset, erro
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-privileged.yaml", size: 1291, mode: os.FileMode(420), modTime: time.Unix(1633965440, 0)}
+	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-privileged.yaml", size: 1291, mode: os.FileMode(436), modTime: time.Unix(1653578551, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -3000,7 +2779,7 @@ func assetsScc0000_20_kubeApiserverOperator_00_sccRestrictedYaml() (*asset, erro
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-restricted.yaml", size: 1213, mode: os.FileMode(420), modTime: time.Unix(1633965440, 0)}
+	info := bindataFileInfo{name: "assets/scc/0000_20_kube-apiserver-operator_00_scc-restricted.yaml", size: 1213, mode: os.FileMode(436), modTime: time.Unix(1653583547, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -3072,16 +2851,14 @@ var _bindata = map[string]func() (*asset, error){
 	"assets/components/hostpath-provisioner/storageclass.yaml":                      assetsComponentsHostpathProvisionerStorageclassYaml,
 	"assets/components/openshift-dns/dns/cluster-role-binding.yaml":                 assetsComponentsOpenshiftDnsDnsClusterRoleBindingYaml,
 	"assets/components/openshift-dns/dns/cluster-role.yaml":                         assetsComponentsOpenshiftDnsDnsClusterRoleYaml,
-	"assets/components/openshift-dns/dns/configmap.yaml":                            assetsComponentsOpenshiftDnsDnsConfigmapYaml,
 	"assets/components/openshift-dns/dns/daemonset.yaml":                            assetsComponentsOpenshiftDnsDnsDaemonsetYaml,
 	"assets/components/openshift-dns/dns/namespace.yaml":                            assetsComponentsOpenshiftDnsDnsNamespaceYaml,
 	"assets/components/openshift-dns/dns/service-account.yaml":                      assetsComponentsOpenshiftDnsDnsServiceAccountYaml,
 	"assets/components/openshift-dns/dns/service.yaml":                              assetsComponentsOpenshiftDnsDnsServiceYaml,
-	"assets/components/openshift-dns/node-resolver/daemonset.yaml":                  assetsComponentsOpenshiftDnsNodeResolverDaemonsetYaml,
 	"assets/components/openshift-dns/node-resolver/service-account.yaml":            assetsComponentsOpenshiftDnsNodeResolverServiceAccountYaml,
+	"assets/components/openshift-dns/node-resolver/update-node-resolver.sh":         assetsComponentsOpenshiftDnsNodeResolverUpdateNodeResolverSh,
 	"assets/components/openshift-router/cluster-role-binding.yaml":                  assetsComponentsOpenshiftRouterClusterRoleBindingYaml,
 	"assets/components/openshift-router/cluster-role.yaml":                          assetsComponentsOpenshiftRouterClusterRoleYaml,
-	"assets/components/openshift-router/configmap.yaml":                             assetsComponentsOpenshiftRouterConfigmapYaml,
 	"assets/components/openshift-router/deployment.yaml":                            assetsComponentsOpenshiftRouterDeploymentYaml,
 	"assets/components/openshift-router/namespace.yaml":                             assetsComponentsOpenshiftRouterNamespaceYaml,
 	"assets/components/openshift-router/service-account.yaml":                       assetsComponentsOpenshiftRouterServiceAccountYaml,
@@ -3173,21 +2950,19 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"dns": {nil, map[string]*bintree{
 					"cluster-role-binding.yaml": {assetsComponentsOpenshiftDnsDnsClusterRoleBindingYaml, map[string]*bintree{}},
 					"cluster-role.yaml":         {assetsComponentsOpenshiftDnsDnsClusterRoleYaml, map[string]*bintree{}},
-					"configmap.yaml":            {assetsComponentsOpenshiftDnsDnsConfigmapYaml, map[string]*bintree{}},
 					"daemonset.yaml":            {assetsComponentsOpenshiftDnsDnsDaemonsetYaml, map[string]*bintree{}},
 					"namespace.yaml":            {assetsComponentsOpenshiftDnsDnsNamespaceYaml, map[string]*bintree{}},
 					"service-account.yaml":      {assetsComponentsOpenshiftDnsDnsServiceAccountYaml, map[string]*bintree{}},
 					"service.yaml":              {assetsComponentsOpenshiftDnsDnsServiceYaml, map[string]*bintree{}},
 				}},
 				"node-resolver": {nil, map[string]*bintree{
-					"daemonset.yaml":       {assetsComponentsOpenshiftDnsNodeResolverDaemonsetYaml, map[string]*bintree{}},
-					"service-account.yaml": {assetsComponentsOpenshiftDnsNodeResolverServiceAccountYaml, map[string]*bintree{}},
+					"service-account.yaml":    {assetsComponentsOpenshiftDnsNodeResolverServiceAccountYaml, map[string]*bintree{}},
+					"update-node-resolver.sh": {assetsComponentsOpenshiftDnsNodeResolverUpdateNodeResolverSh, map[string]*bintree{}},
 				}},
 			}},
 			"openshift-router": {nil, map[string]*bintree{
 				"cluster-role-binding.yaml": {assetsComponentsOpenshiftRouterClusterRoleBindingYaml, map[string]*bintree{}},
 				"cluster-role.yaml":         {assetsComponentsOpenshiftRouterClusterRoleYaml, map[string]*bintree{}},
-				"configmap.yaml":            {assetsComponentsOpenshiftRouterConfigmapYaml, map[string]*bintree{}},
 				"deployment.yaml":           {assetsComponentsOpenshiftRouterDeploymentYaml, map[string]*bintree{}},
 				"namespace.yaml":            {assetsComponentsOpenshiftRouterNamespaceYaml, map[string]*bintree{}},
 				"service-account.yaml":      {assetsComponentsOpenshiftRouterServiceAccountYaml, map[string]*bintree{}},
